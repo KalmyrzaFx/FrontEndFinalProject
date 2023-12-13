@@ -6,8 +6,10 @@ It has such features:
 - Dog/Cat random images instead of pieces
 - Winner detection
 ### Link to website
-([https://main--rococo-melba-805e11.netlify.app/](https://main--rococo-melba-805e11.netlify.app/))
+[https://main--rococo-melba-805e11.netlify.app/](https://main--rococo-melba-805e11.netlify.app/)
 
+### Youtube video
+https://youtu.be/S45SxVRcehY
 ### Technologies Used
 - React.js 18
 - JavaScript (ES6+)
