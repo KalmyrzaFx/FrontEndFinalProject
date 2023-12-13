@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Use 100vh to make sure it takes the full height of the viewport */
+}
+
+#board {
+  border: 2px solid black;
+  padding: 10px; /* Adjust padding based on your preference */
+}
+
+h1 {
+  font-size: 36px;
+  margin: 10px;
+  color: black;
+} 
+
+.square {
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid black;
+  height: 70px; /* Adjust the size of each square */
+  width: 70px; /* Adjust the size of each square */
+  margin-top: -1px;
+  margin-right: -1px;
+}
+
+/* ... (rest of your CSS) */
+
+@media (max-width: 600px) {
+  .square {
+    height: 50px; /* Adjust the size for smaller screens */
+    width: 50px; /* Adjust the size for smaller screens */
+  }
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  color: rgb(172, 16, 16);
+}
+
+.blue {
+  color: rgb(2, 2, 188);
+}
+
+.piece {
+  font-size: 50px; /* Adjust the font size based on your design */
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: -1px;
+  margin: 5px; /* Added margin for spacing */
+}
+
+.queen {
+  font-size: 50px;
+}
+
+
+.highlighted {
+  color: rgba(240, 255, 255, 0.56);
+  font-size: 50px;
+  top: -7px;
+}
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 400px) {
+
+  body {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .square {
+    height: 40px;
+    width: 40px;
+  }
+
+  .piece {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+  }
+  
+  .queen {
+    font-size: 42px;
+  }
+  
+  .highlighted {
+    color: rgba(240, 255, 255, 0.56);
+    font-size: 42px;
+  }
+
+}
+
+.piece img {
+  width: 50px; /* Adjust the width based on your preference */
+  height: 50px; /* Adjust the height based on your preference */
+  object-fit: cover; /* This ensures that the image covers the entire container */
+  border-radius: 50%; /* Makes the image circular */
+  display: block; /* Ensures proper rendering as a block element */
+  margin: auto; /* Centers the image horizontally within the .piece container */
+}
+
+h2 {
+  margin: 5px;
+}
