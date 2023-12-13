@@ -35,7 +35,6 @@ const Board = function Board({redToMove, moveMade, board, setBoard}, ref) {
     const showMoves = (row, col) => {
       
       let selected = board[row][col]
-      let possibleMoves = [];
 
       if (selected === '0' && redToMove){
         let possibleMoves = getMovesRed(board, row, col)
