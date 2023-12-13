@@ -3,12 +3,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Use 100vh to make sure it takes the full height of the viewport */
+  height: 100vh; 
 }
 
 #board {
   border: 2px solid black;
-  padding: 10px; /* Adjust padding based on your preference */
+  padding: 10px; 
 }
 
 h1 {
@@ -17,22 +17,36 @@ h1 {
   color: black;
 } 
 
+button {
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
 .square {
   box-sizing: border-box;
   padding: 0;
   border: 1px solid black;
-  height: 70px; /* Adjust the size of each square */
-  width: 70px; /* Adjust the size of each square */
+  height: 70px; 
+  width: 70px; 
   margin-top: -1px;
   margin-right: -1px;
 }
 
-/* ... (rest of your CSS) */
 
 @media (max-width: 600px) {
   .square {
-    height: 50px; /* Adjust the size for smaller screens */
-    width: 50px; /* Adjust the size for smaller screens */
+    height: 50px; 
+    width: 50px; 
   }
 }
 
@@ -53,12 +67,12 @@ h1 {
 }
 
 .piece {
-  font-size: 50px; /* Adjust the font size based on your design */
+  font-size: 50px; 
   font-weight: bold;
   text-align: center;
   position: relative;
   top: -1px;
-  margin: 5px; /* Added margin for spacing */
+  margin: 5px;
 }
 
 .queen {
@@ -109,12 +123,12 @@ h1 {
 }
 
 .piece img {
-  width: 50px; /* Adjust the width based on your preference */
-  height: 50px; /* Adjust the height based on your preference */
-  object-fit: cover; /* This ensures that the image covers the entire container */
-  border-radius: 50%; /* Makes the image circular */
-  display: block; /* Ensures proper rendering as a block element */
-  margin: auto; /* Centers the image horizontally within the .piece container */
+  width: 50px; 
+  height: 50px; 
+  object-fit: cover;
+  border-radius: 50%; 
+  display: block;
+  margin: auto;
 }
 
 h2 {

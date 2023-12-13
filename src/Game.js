@@ -32,7 +32,6 @@ export default function Game(){
     }, [board])
 
     const handleReset = () => {
-      // Reload the page to reset the game
       window.location.reload();
     };
 
